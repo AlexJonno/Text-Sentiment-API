@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  <body>
+    <h3>
+      An API for text postive/negative sentiment analysis
+    </h3>
+    <div id="container">
+      <div id="leftcont">
+      <p>
+        Enter a word into the database here
+      </p>
+    <p>
+    word: <input id="word">
+    <br/>
+  </p>
+  <p>
+    score: <input id="score">
+    <br/>
+    <button id="submit">submit</button>
+  </p>
+  <p>
+    Enter your text for analysis here
+  </p>
+  <p>
+    <textarea cols="40" rows="5" id="textinput"></textarea>
+    <br/>
+    <button id="analyze">analyze</button>
+  </p>
+</div>
+  <div id="rightcont">
+    <p id="scorearea">
+      Results:
+    </p>
+    <pre class="results">
+    </pre>
+</div>
+</div>
+  </body>
+</html>
